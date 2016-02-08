@@ -1,0 +1,11 @@
+[
+  {
+    "id": "tools",
+    "children": [
+      {
+        "caption": "Open with...",
+        "command": "open_with"
+      }
+    ]
+  }
+]

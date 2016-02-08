@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.1",
+  "packages": [
+    {
+      "name": "OpenWith",
+      "author": "Jean-Martin Archer",
+      "description": "Open with any app/editor you want while preserving the cursor position.",
+      "homepage": "https://github.com/j-martin/open-with-sublime",
+      "last_modified": "2016-02-07",
+      "platforms": {
+        "osx": [
+          {
+            "version": "1.0.0",
+            "url": "https://github.com/j-martin/open-with-sublime"
+          }
+        ]
+      }
+    }
+  ]
+}
