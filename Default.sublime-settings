@@ -3,6 +3,10 @@
     {
       "name": "IntelliJ IDEA",
       "command": ["/usr/local/bin/idea", "{filename}:{line}"]
+    },
+    {
+      "name": "Finder",
+      "command": ["open", "{directory}"]
     }
   ]
 }
