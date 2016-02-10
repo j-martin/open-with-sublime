@@ -39,7 +39,14 @@ smooth.
 
 ## Configuration
 
-# Variables/Placeholder:
+By default, using `Open with...` from the command palette will let you use IntelliJ and Finder.
+
+To add your own editor, add the following settings.
+- the `name` key is the window name (to be activated)
+- Adding your own application/editor to your user settings will help populating
+  the command palette (`cmd+shift+p`).
+
+#### Variables/Placeholder:
 The are template placeholders and will be replaced when launching the editor/application.
 
 - `{filename}` (fully qualified)
@@ -47,12 +54,7 @@ The are template placeholders and will be replaced when launching the editor/app
 - `{line}` (number)
 - `{column}` (number)
 
-### Example Configuration
-
-To add your own editor, add the following settings.
-- the `name` key is the window name (to be activated)
-- Adding your own application/editor to your user settings will help populating
-  the command palette (`cmd+shift+p`).
+### Example
 
 #### `Preferences: Settings - User`
 
@@ -62,6 +64,11 @@ To add your own editor, add the following settings.
     {
       "name": "IntelliJ IDEA",
       "command": ["/usr/local/bin/idea", "{filename}:{line}"]
+    },
+    {
+      "name": "NeoVim",
+      "command":
+      ["/usr/local/Cellar/neovim-dot-app/HEAD/bin/gnvim", "{filename}", "+{line}"],
     },
     {
       "name": "MacVim",
