@@ -6,6 +6,7 @@ import subprocess
 from functools import partial
 
 SETTINGS_FILE = 'Default.sublime-settings'
+SETTINGS_KEY = 'open_with'
 
 
 class OpenWithCommand(sublime_plugin.WindowCommand):
@@ -22,10 +23,11 @@ class OpenWithCommand(sublime_plugin.WindowCommand):
         return 'Open file with application/editor.'
 
     def get_apps(self):
-        return (
-            self.window.active_view().settings() or
-            sublime.load_settings(SETTINGS_FILE)
-        ).get('open_with')
+        return self.window.active_view().settings().get(SETTINGS_KEY, self.get_default_settings())
+
+    @staticmethod
+    def get_default_settings():
+        return sublime.load_settings(SETTINGS_FILE).get(SETTINGS_KEY, [])
 
     def run(self, *args, **kwargs):
         apps = self.get_apps()
