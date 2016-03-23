@@ -5,9 +5,9 @@
 
 Opens the file you are working with into another editor or application. While:
  - Preserving your cursor position.
- - Allow flexible key binding
- - Allow templating/variables (line number, columns number, etc.)
- - Activates the target editor window (if required)
+ - Allow flexible key binding.
+ - Allow templating/variables (line number, columns number, etc.).
+ - Activates the target editor window (if required).
 
 It currently only support Sublime Text 3 on OSX.
 
@@ -25,7 +25,7 @@ but Sublime shines when it comes to its multi-cursor support (for example).
 The idea is to be able to switch between them with minimal cognitive load and
 preserve the cursor location when switching between editors.
 
-## Possible use case / scenario
+## Possible use cases / scenarios
 
 - Editing some file in IntelliJ.
 - Call Sublime [as an IntelliJ external
@@ -36,6 +36,11 @@ preserve the cursor location when switching between editors.
 
 If both editors are configured to save on loss of focus, it makes things super
 smooth.
+
+## Installation
+
+1. Install [Package Control for SublimeText 3](https://packagecontrol.io/installation).
+1. Type `cmd + shift + p` or `ctrl + shift + p` | `Package Install` | `Open With`
 
 ## Configuration
 
