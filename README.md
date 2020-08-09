@@ -9,7 +9,7 @@ Opens the file you are working with into another editor or application. While:
  - Allow templating/variables (line number, columns number, etc.).
  - Activates the target editor window (if required).
 
-It currently only support Sublime Text 3 on OSX.
+It currently only support Sublime Text 3 on macOS.
 
 ## Why?
 
@@ -124,5 +124,5 @@ the key bindings, just specify the `name` and `command` as `args`.
 - Defining the editor as a build tool (kinda wonky).
 - [Sidebar Enhancements](https://github.com/titoBouzout/SideBarEnhancements),
   Wonderful plugin (you should install it), but last time I checked it doesn't
-  preserve line numbers and a bit awkward to set key bindings and `On OSX,
+  preserve line numbers and a bit awkward to set key bindings and `On macOS,
   invoking shell commands is NOT supported.`
